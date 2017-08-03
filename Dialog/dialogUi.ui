@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>311</width>
+    <height>507</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>291</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="quesButton">
+       <property name="text">
+        <string>问题框</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="infoButton">
+       <property name="text">
+        <string>信息框</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="criticalButton">
+       <property name="text">
+        <string>严重警告框</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="warningButton">
+       <property name="text">
+        <string>警告框</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>基本对话框</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>标准对话框</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>291</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="leftMargin">
+      <number>30</number>
+     </property>
+     <property name="rightMargin">
+      <number>30</number>
+     </property>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>获取整型</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>获取字符串</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string>下拉框</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>350</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="digitCount">
+     <number>10</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+    <property name="value" stdset="0">
+     <double>1234567890.000000000000000</double>
+    </property>
+    <property name="intValue" stdset="0">
+     <number>1234567890</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>430</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>自定义对话框</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>311</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>infoButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>infoButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>85</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quesButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quesButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>247</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>warningButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>warningButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>158</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>criticalButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>criticalButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>getStringButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>265</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>253</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>getIntButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>265</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>298</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>getComboButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMyDialog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>464</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>464</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>infoButton_clicked()</slot>
+  <slot>quesButton_clicked()</slot>
+  <slot>warningButton_clicked()</slot>
+  <slot>criticalButton_clicked()</slot>
+  <slot>getStringButton_clicked()</slot>
+  <slot>getIntButton_clicked()</slot>
+  <slot>getComboButton_clicked()</slot>
+  <slot>showMyDialog()</slot>
+ </slots>
+</ui>
