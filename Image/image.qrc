@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="my_pic">
+    <file>pic/12.jpg</file>
+    <file>pic/123.jpg</file>
+    <file>pic/1234.jpg</file>
+  </qresource>
+  <qresource prefix="UI">
+    <file>pic/face.jpg</file>
+  </qresource>
+</RCC>
