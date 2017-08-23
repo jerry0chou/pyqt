@@ -1,11 +1,11 @@
 ﻿# -*- coding:utf-8 -*-
 # Author : JerryChu
 
-import six
-import packaging
-import packaging.version
-import packaging.specifiers
-import packaging.requirements
+# import six
+# import packaging
+# import packaging.version
+# import packaging.specifiers
+# import packaging.requirements
 
 from PyQt5.QtCore import QThread, Qt
 from PyQt5.QtGui import QPixmap
